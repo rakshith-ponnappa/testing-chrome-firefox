@@ -20,7 +20,7 @@ podTemplate(label: 'maven-selenium', containers: [
 
   node('maven-selenium') {
     stage('Checkout') {
-      git 'https://github.com/carlossg/selenium-example.git'
+      git 'https://github.com/rakshith-ponnappa/testing-chrome-firefox.git'
       parallel (
         firefox: {
           container('maven-firefox') {
