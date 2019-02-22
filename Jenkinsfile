@@ -26,6 +26,7 @@ podTemplate(label: 'maven-selenium', containers: [
           container('maven-firefox') {
             stage('Test firefox') {
               sh 'mvn -B clean test -Dselenium.browser=firefox -Dsurefire.rerunFailingTestsCount=5 -Dsleep=0'
+	      echo "testing firefox"
             }
           }
         },
